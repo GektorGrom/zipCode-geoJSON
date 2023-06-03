@@ -3,7 +3,7 @@ import { oakCors } from 'https://deno.land/x/cors@v1.2.2/mod.ts';
 import { eq } from 'npm:drizzle-orm';
 import { drizzle } from 'npm:drizzle-orm/libsql';
 import { createClient } from 'npm:@libsql/client';
-import zipCodes, { ZipCode } from './schema/zipCodeSchema.ts';
+import zipCodes from './schema/zipCodeSchema.ts';
 
 const DATABASE_AUTH_TOKEN = Deno.env.get('DATABASE_AUTH_TOKEN');
 const DATABASE_URL = Deno.env.get('DATABASE_URL') as string;
